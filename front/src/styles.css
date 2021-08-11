@@ -1,0 +1,104 @@
+
+
+/*
+Material Design
+
+Color - .87 - .60 - .38
+*/
+
+
+/* Reset */
+
+* { padding:0; border:none; margin:0; font-size:100%; font:inherit; vertical-align: baseline; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+
+body, html { width:100%; height:100%; }
+body {
+    min-width:320px; max-width:100%; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; overflow-x:hidden;
+    color:rgba(0, 0, 0, .60); font-size:100%; line-height:100%; word-wrap:break-word; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background:#f5f5f5;
+}
+
+a, button { color:rgba(0, 0, 0, .87); text-decoration:none; cursor:pointer; }
+
+img { vertical-align:bottom; }
+
+button, input, select {
+    border:none; display:block; color:rgba(0, 0, 0, .60); font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:100%; line-height:100%; text-align:left;
+    background:none; -webkit-appearance:none; -moz-appearance:none; appearance:none;
+}
+
+input:-webkit-autofill { color:rgba(0, 0, 0, 0.54) !important; -webkit-text-fill-color:rgba(0, 0, 0, 0.54) !important; background-color:none !important; transition:none; box-shadow:inset 0 0 0 10rem #fff; }
+
+.material-icon, .material-icon-after::after, .material-icon-before::before {
+    width:1.5rem; height:1.5rem; display:inline-block; overflow:hidden; direction:ltr;
+    font-family:"Material Icons"; font-size:1.5rem; font-style:normal; font-weight:400;
+    letter-spacing:normal; line-height:1; text-transform:none; white-space:nowrap; word-wrap:normal;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-feature-settings:"liga"; text-rendering:optimizeLegibility;
+}
+
+
+/* Conteúdo */
+
+.main { padding:2.5rem 40px; margin:0 auto; }
+.main-wrap-960  { max-width: 960px; }
+.main-wrap-1280 { max-width:1280px; }
+
+.section { margin-top:2rem; background:#ffffff; border-radius:8px; box-shadow:0 4px 6px 0px rgba(0,0,0,.16); }
+.section-header { padding:1.5rem 24px; display:flex; align-items:center; justify-content:space-between; }
+
+
+/* Table */
+
+.table-container { width:100%; overflow:auto; }
+
+table { width:100%; border-collapse:collapse; border-spacing:0; overflow:hidden; }
+
+table tr th, table tr td { padding:.875rem 12px; font-size:.875rem; line-height:120%; vertical-align:middle; }
+
+table tr th { border:solid rgba(0,0,0,.08); border-width:1px 0; font-weight:bold; text-align:left; }
+table tr th:nth-child(1), table tr td:nth-child(1) { padding-left:24px; }
+table tr th:nth-child(5), table tr td:nth-child(5) { padding-right:24px; }
+
+table tr td { color:rgba(0,0,0,.60); }
+table tr:nth-child(odd) td { background:rgba(0,0,0,.04); }
+
+
+/* Título */
+
+.titulo-h1 { font-size:2rem; line-height:100%; }
+.titulo-h2 { font-size:1.5rem; line-height:100%; }
+
+
+/* Botões */
+
+.botao { padding:.75rem 12px; display:block; font-weight:bold; border-radius:8px; transition:opacity .25s; }
+.botao-primario { color:#ffffff; background:#a61b1d; }
+.botao-secundario { border:2px solid #a61b1d; color:#a61b1d; background:#ffffff; }
+.botao:hover { opacity:.8; }
+
+.botao-icon { color:rgba(166,27,29,.7); transition:color .25s; }
+.botao-icon:hover { color:rgba(166,27,29,1); }
+
+/* Formulário */
+
+.form { padding:.5rem 12px 1.5rem; display:flex; flex-wrap:wrap; }
+.form-div { width:100%; padding:0 12px 1.5rem; }
+.form-div-50 { width:50%; }
+
+.form-label { padding:0 6px; position:absolute; top:-.5rem; left:8px; color:rgba(0,0,0,.60); font-size:12px; line-height:100%; background:#ffffff; }
+.form-content { border:1px solid rgba(0,0,0,.16); display:block; position:relative; border-radius:8px; }
+.form-content-pesquisar { display:flex; align-items:; }
+
+.form-input { width:100%; padding:.875rem 12px; color:rgba(0,0,0,.38); font-size:.875rem; line-height:100%; transition:color .25s; }
+.form-input-button { width:44px; height:2.75rem; text-align:center; transition:color .25s; }
+.form-input-button:hover { color:rgba(0,0,0,.87); }
+
+.form-input:focus, .form-input:hover { color:rgba(0,0,0,.87); }
+
+.form-checkbox { height:2.75rem; padding:0 12px; display:flex; align-items:center; }
+.form-checkbox-icon { width:24px; height:24px; overflow:hidden; }
+.form-checkbox-icon::before { content:"check_box_outline_blank"; }
+.form-checkbox-icon:checked::before { content:"check_box"; }
+.form-checkbox-text { margin-left:8px; font-size:.875rem; line-height:100%; }
+
+.form-button { width:100%; padding:0 12px; display:flex; justify-content:flex-end; }
+.form-button .botao + .botao { margin-left:16px; }

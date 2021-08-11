@@ -1,0 +1,33 @@
+
+<h1 class="titulo-h1">Cadastro de profissionais</h1>
+
+<section class="section">
+    <div class="section-header">
+        <div class="form-content form-content-pesquisar">
+            <input type="text" class="form-input" placeholder="Pesquisar" [formControl]="pesquisar">
+            <button type="button" class="form-input-button material-icon" (click)="filtrar()">search</button>
+        </div>
+
+        <a routerLink="/profissional" title="Adicionar profissional" class="botao botao-primario">Adicionar</a>
+    </div>
+    
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Cargo</th>
+                <th>Registro</th>
+                <th width="60px"></th>
+            </tr>
+            
+            <tr *ngFor="let profissional of listaProfissionais">
+                <td (click)="editar(profissional.id)">{{ profissional.nome }}</td>
+                <td (click)="editar(profissional.id)">{{ profissional.cpf }}</td>
+                <td (click)="editar(profissional.id)">{{ profissional.cargo }}</td>
+                <td (click)="editar(profissional.id)">{{ profissional.registroConselho }}</td>
+                <td><button type="button" class="botao-icon material-icon" (click)="excluir(profissional.id)">delete_outline</button></td>
+            </tr>
+        </table>
+    </div>
+</section>

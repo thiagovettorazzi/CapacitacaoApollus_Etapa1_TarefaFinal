@@ -1,0 +1,55 @@
+
+<h1 class="titulo-h1">Cadastro de profissionais</h1>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="titulo-h2">Cadastrar</h2>
+    </div>
+    
+    <form class="form" [formGroup]="form">
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-label">CPF</div>
+                <input type="text" name="cpf" class="form-input" placeholder="CPF" formControlName="cpf"/>
+            </label>
+        </div>
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-label">Nome</div>
+                <input type="text" name="nome" class="form-input" placeholder="Nome" formControlName="nome"/>
+            </label>
+        </div>
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-label">NIS</div>
+                <input type="text" name="nis" class="form-input" placeholder="NIS" formControlName="nis"/>
+            </label>
+        </div>
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-label">Registro Conselho</div>
+                <input type="text" name="nis" class="form-input" placeholder="Registro Conselho" formControlName="registroConselho"/>
+            </label>
+        </div>
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-label">Cargo</div>
+                <input type="text" name="cargo" class="form-input" placeholder="Cargo" formControlName="cargo"/>
+            </label>
+        </div>
+        <div class="form-div form-div-50">
+            <label class="form-content">
+                <div class="form-checkbox">
+                    <input type="checkbox" name="responsavelTecnico" class="form-checkbox-icon material-icon-before" formControlName="responsavelTecnico"/>
+                    <span class="form-checkbox-text">Responsável Técnico</span>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-button">
+            <a routerLink="/lista" title="Cancelar" class="botao botao-secundario">Cancelar</a>
+            <button type="button" class="botao botao-primario" (click)="onSubmit()">Salvar</button>
+        </div>
+    </form>
+    <!--  <profissional-form [form]="form"></profissional-form>(submit)="onSubmit($event)" -->
+</section>
